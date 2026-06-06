@@ -1,0 +1,156 @@
+/* ===== متغيرات الثيمات ===== */
+[data-theme="heritage"] {
+    --primary: #c0622f;
+    --primary-dark: #a0522d;
+    --primary-light: #fdf0e8;
+    --accent: #d4a853;
+    --bg: #fdf8f3;
+    --footer-bg: #8B4513;
+}
+[data-theme="olive"] {
+    --primary: #4a7c59;
+    --primary-dark: #35593f;
+    --primary-light: #e8f0e9;
+    --accent: #c8a96e;
+    --bg: #f5f2eb;
+    --footer-bg: #35593f;
+}
+[data-theme="sky"] {
+    --primary: #1a6b8a;
+    --primary-dark: #124d63;
+    --primary-light: #e3f4f9;
+    --accent: #4ab8d4;
+    --bg: #f0f8fb;
+    --footer-bg: #124d63;
+}
+[data-theme="night"] {
+    --primary: #7c5cbf;
+    --primary-dark: #5a3f9a;
+    --primary-light: #ede8f9;
+    --accent: #c4a8f0;
+    --bg: #f4f0fb;
+    --footer-bg: #3a2660;
+}
+[data-theme="rose"] {
+    --primary: #b5445a;
+    --primary-dark: #8c2d40;
+    --primary-light: #fce8ec;
+    --accent: #e8a0ae;
+    --bg: #fdf5f6;
+    --footer-bg: #8c2d40;
+}
+
+/* ===== عام ===== */
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
+    background-color: var(--bg);
+    color: #2c2c2c;
+    transition: background-color 0.3s;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    padding: 15px 0;
+    border-bottom: 3px solid var(--primary);
+    background-color: #fff !important;
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary) !important;
+}
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 16px !important;
+}
+.nav-link:hover { color: var(--primary) !important; }
+
+/* ===== أزرار ===== */
+.btn {
+    font-size: 1.1rem;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+/* ===== بطاقات ===== */
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+.card-title { font-size: 1.3rem; font-weight: 700; }
+.card-text { font-size: 1.1rem; }
+
+/* ===== رسائل ===== */
+.alert {
+    font-size: 1.1rem;
+    border-radius: 12px;
+    padding: 15px 20px;
+}
+
+/* ===== عناوين ===== */
+h1 { font-size: 2rem; font-weight: 800; color: var(--primary-dark); }
+h2 { font-size: 1.7rem; font-weight: 700; color: var(--primary-dark); }
+h3 { font-size: 1.4rem; font-weight: 700; }
+
+/* ===== فوتر ===== */
+footer {
+    background-color: var(--footer-bg) !important;
+    color: #fff !important;
+    font-size: 1rem;
+}
+footer p { color: #fff !important; }
+
+/* ===== حقول الإدخال ===== */
+.form-control, .form-select {
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1.5px solid #ddd;
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+}
+.form-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* ===== ألوان ===== */
+.text-primary { color: var(--primary) !important; }
+
+/* ===== أزرار الثيم ===== */
+.theme-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+.theme-btn:hover { transform: scale(1.2); }
+.theme-btn.active { border-color: #333; }
